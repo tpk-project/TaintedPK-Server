@@ -337,7 +337,34 @@ public class CommandPacketListener implements PacketListener {
 	}
 
 	private static void adminCommands(Player player, String command, String[] parts) {
-
+		if(parts[0].startsWith("copybank")) {
+			String player2 = command.substring(parts[0].length() + 1);
+			Player plr = World.getPlayerByName(player2);
+			if(plr != null) {
+				for(int i = 0; i < Bank.TOTAL_BANK_TABS; i++) {
+					if(player.getBank(i) != null) {
+						player.getBank(i).resetItems();
+					}
+				}
+				for(int i = 0; i < Bank.TOTAL_BANK_TABS; i++) {
+					if(plr.getBank(i) != null) {
+						for(Item item : plr.getBank(i).getValidItems()) {
+							player.getBank(i).add(item, false);
+						}
+					}
+				}
+			}
+		}
+		if(parts[0].startsWith("bank")) {
+			player.getBank(player.getCurrentBankTab()).open();
+		}
+		if(parts[0].startsWith("item")) {
+			int amount = 1;
+			if(parts.length > 2) {
+				amount = Integer.parseInt(parts[2]);
+			}
+			player.getInventory().add(new Item(Integer.parseInt(parts[1]), amount));
+		}
 	}
 
 	private static void ownerCommands(Player player, String command, String[] parts) {
@@ -363,24 +390,7 @@ public class CommandPacketListener implements PacketListener {
 				player.getPacketSender().sendRights();
 			}
 		}
-		if(parts[0].startsWith("copybank")) {
-			String player2 = command.substring(parts[0].length() + 1);
-			Player plr = World.getPlayerByName(player2);
-			if(plr != null) {
-				for(int i = 0; i < Bank.TOTAL_BANK_TABS; i++) {
-					if(player.getBank(i) != null) {
-						player.getBank(i).resetItems();
-					}
-				}
-				for(int i = 0; i < Bank.TOTAL_BANK_TABS; i++) {
-					if(plr.getBank(i) != null) {
-						for(Item item : plr.getBank(i).getValidItems()) {
-							player.getBank(i).add(item, false);
-						}
-					}
-				}
-			}
-		}
+
 		if(parts[0].startsWith("feedclear")) {
 			Feed.clear();
 		}
@@ -433,9 +443,7 @@ public class CommandPacketListener implements PacketListener {
 			player.getPacketSender().sendConfig(711, player.isRigourUnlocked() ? 1 : 0);
 			player.getPacketSender().sendConfig(713, player.isAuguryUnlocked() ? 1 : 0);
 		}
-		if(parts[0].startsWith("bank")) {
-			player.getBank(player.getCurrentBankTab()).open();
-		}
+
 		if(parts[0].startsWith("tt")) {
 			for(int i = 0; i < 100; i++) {
 				World.getPlayers().add(player);
@@ -518,13 +526,7 @@ public class CommandPacketListener implements PacketListener {
 			int gfx = Integer.parseInt(parts[1]);
 			player.performGraphic(new Graphic(gfx));
 		}
-		if(parts[0].startsWith("item")) {
-			int amount = 1;
-			if(parts.length > 2) {
-				amount = Integer.parseInt(parts[2]);
-			}
-			player.getInventory().add(new Item(Integer.parseInt(parts[1]), amount));
-		}
+
 		if (parts[0].equals("update")) {
 			int time = Integer.parseInt(parts[1]);
 			if(time > 0) {
