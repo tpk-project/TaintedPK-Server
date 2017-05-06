@@ -1,31 +1,4 @@
 [
-  {
-    "name": "Beta Package",
-    "spellbook": "NORMAL",
-    "stats": [
-      99,
-      99,
-      99,
-      99,
-      99,
-      99,
-      99
-    ],
-    "inventory": [
-      {
-        "id": 13307,
-        "amount": 10000000
-      }
-
-    ],
-    "equipment": [
-      {
-        "id": -1,
-        "amount": 1
-      }
-
-    ]
-  },
 	{
       "name": "Obby Mauler",
       "spellbook": "NORMAL",
@@ -307,7 +280,7 @@
 			{
 			  "id": 3144,
 			  "amount": 1
-			},
+			}, 
 			{
 			  "id": 385,
 			  "amount": 1
@@ -476,7 +449,7 @@
 			{
 			  "id": 3144,
 			  "amount": 1
-			},
+			}, 
 			{
 			  "id": 385,
 			  "amount": 1
@@ -649,7 +622,7 @@
 			{
 			  "id": 3144,
 			  "amount": 1
-			},
+			}, 
 			{
 			  "id": 385,
 			  "amount": 1
@@ -818,7 +791,7 @@
 			{
 			  "id": 555,
 			  "amount": 1000
-			},
+			}, 
 			{
 			  "id": 565,
 			  "amount": 1000
@@ -991,7 +964,7 @@
 			{
 			  "id": 560,
 			  "amount": 1000
-			},
+			}, 
 			{
 			  "id": 557,
 			  "amount": 1000
@@ -1160,7 +1133,7 @@
 			{
 			  "id": 560,
 			  "amount": 1000
-			},
+			}, 
 			{
 			  "id": 557,
 			  "amount": 1000
@@ -1343,7 +1316,7 @@
               "amount": 15
             }
         ],
-		"equipment":
+		"equipment": 
 		[
             {
               "id": 10828,

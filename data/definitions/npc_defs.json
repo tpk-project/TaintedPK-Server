@@ -14,7 +14,7 @@
 	{
 		"npcId": 3310,
         "name": "Financial Advisor",
-		"examine": "Handles the books for OSRS Pk. He also manages player donations."
+		"examine": "Handles the books for Alunity. He also manages player donations."
     }, 
 	{
 		"npcId": 7456,
@@ -170,5 +170,31 @@
 		"npcId": 497,
         "name": "Callisto cub",
 		"examine": "Awww, so cute!"
-    }
+    },
+	{
+		"npcId": 6593,
+		"name": "Lava Dragon",
+		"walk-radius": 2,
+		"size": 2,
+		"attackable": true,
+		"aggressive": false,
+		"combat-follow": 15,
+		"respawn": 130,
+		"hitpoints": 230,
+		"combat-level": 252,
+		"attack-level": 240,
+		"strength-level": 220,
+		"ranged-level": 1,
+		"magic-level": 360,
+		"defence-melee": 90,
+		"defence-ranged": 70,
+		"defence-magic": 80,
+		"max-hit": 23,
+		"attack-speed": 6,
+		"defence-anim": 89,
+		"death-anim": 28,
+		"attack-anim": 80,
+		"examine": "I wouldn't want to eat his Porridge.",
+		"walk-radius": 25
+	}
 ]
