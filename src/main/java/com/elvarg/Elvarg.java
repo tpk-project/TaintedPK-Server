@@ -78,7 +78,7 @@ public class Elvarg {
 			final ExecutorService serviceLoader = Executors.newSingleThreadExecutor(new ThreadFactoryBuilder().setNameFormat("GameLoadingThread").build());
 
 			//DEFINITIONS
-			logger.info("Loading definitions...");
+			logger.info(  "Loading definitions...");
 			serviceLoader.execute(() -> ObjectDefinition.init());
 			serviceLoader.execute(() -> RegionClipping.init());
 			serviceLoader.execute(() -> ItemDefinition.parse().load());
@@ -119,7 +119,7 @@ public class Elvarg {
 			.scheduleAtFixedRate(engine, 0, GameConstants.GAME_ENGINE_PROCESSING_CYCLE_RATE, TimeUnit.MILLISECONDS);
 			
 			logger.info("The loader has finished loading utility tasks.");
-			logger.info("Elvarg is now online on port "+NetworkConstants.GAME_PORT+"!");
+			logger.info("TaintedPK is now online on port "+NetworkConstants.GAME_PORT+"!");
 		} catch (Exception ex) {
 			logger.log(java.util.logging.Level.SEVERE, "Could not start Elvarg! Program terminated.", ex);
 			System.exit(1);

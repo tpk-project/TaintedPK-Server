@@ -2,7 +2,7 @@
    {
       "id":0,
       "buys-items":true,
-      "name":"OSRS Pk Shop",
+      "name":"Tainted Pk Shop",
       "items":[
          {
             "id":9520,
@@ -354,7 +354,7 @@
    {
       "id":1,
       "buys-items":true,
-      "name":"Party Pete's Gambling Shop",
+      "name":"Party Pete's Cosmetic Shop",
       "items":[
          {
             "id":299,

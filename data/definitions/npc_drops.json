@@ -525,31 +525,7 @@
 	],
 	"rare_droptable": [
         {
-            "id": 9194,
-			"amount": 30
-        },
-        {
-            "id": 1738,
-			"amount": 150
-        },
-        {
-            "id": 10815,
-			"amount": 60
-        },
-        {
-            "id": 1392,
-			"amount": 15
-        },
-        {
-            "id": 1437,
-			"amount": 300
-        },
-        {
-            "id": 1452,
-			"amount": 1
-        },
-        {
-            "id": 1454,
+            "id": 13652,
 			"amount": 1
         }
 	],
@@ -597,5 +573,176 @@
 			"amount": 1
         }
 	]
-}
+},
+  {
+    "npcId": 6593,
+    "always_droptable": [
+      {
+        "id": 11943,
+        "amount": 1
+      },
+      {
+        "id": 11992,
+        "amount": 1
+      }
+    ],
+    "common_droptable": [
+      {
+        "id": 13307,
+        "amount": 1000
+      },
+      {
+        "id": 13307,
+        "amount": 2500
+      },
+      {
+        "id": 12934,
+        "amount": 100
+      },
+      {
+        "id": 1437,
+        "amount": 150
+      },
+      {
+        "id": 7937,
+        "amount": 50
+      },
+      {
+        "id": 1438,
+        "amount": 1
+      },
+      {
+        "id": 1440,
+        "amount": 1
+      },
+      {
+        "id": 1442,
+        "amount": 1
+      },
+      {
+        "id": 1444,
+        "amount": 1
+      },
+      {
+        "id": 1446,
+        "amount": 1
+      },
+      {
+        "id": 1448,
+        "amount": 1
+      }
+    ],
+    "uncommon_droptable": [
+      {
+        "id": 9520,
+        "amount": 1
+      },
+      {
+        "id": 6035,
+        "amount": 70
+      },
+      {
+        "id": 238,
+        "amount": 45
+      },
+      {
+        "id": 224,
+        "amount": 200
+      },
+      {
+        "id": 445,
+        "amount": 110
+      },
+      {
+        "id": 2,
+        "amount": 130
+      },
+      {
+        "id": 1513,
+        "amount": 30
+      },
+      {
+        "id": 226,
+        "amount": 40
+      },
+      {
+        "id": 3052,
+        "amount": 13
+      }
+    ],
+    "rare_droptable": [
+      {
+        "id": 9194,
+        "amount": 30
+      },
+      {
+        "id": 1738,
+        "amount": 150
+      },
+      {
+        "id": 10815,
+        "amount": 60
+      },
+      {
+        "id": 1392,
+        "amount": 15
+      },
+      {
+        "id": 1437,
+        "amount": 300
+      },
+      {
+        "id": 1452,
+        "amount": 1
+      },
+      {
+        "id": 1454,
+        "amount": 1
+      }
+    ],
+    "very_rare_droptable": [
+      {
+        "id": 11920,
+        "amount": 1
+      },
+      {
+        "id": 1437,
+        "amount": 450
+      },
+      {
+        "id": 1456,
+        "amount": 1
+      },
+      {
+        "id": 1458,
+        "amount": 1
+      },
+      {
+        "id": 1462,
+        "amount": 1
+      }
+    ],
+    "legendary_droptable": [
+      {
+        "id": 12371,
+        "amount": 1
+      },
+      {
+        "id": 13177,
+        "amount": 1
+      },
+      {
+        "id": 11665,
+        "amount": 1
+      },
+      {
+        "id": 12006,
+        "amount": 1
+      },
+      {
+        "id": 12849,
+        "amount": 1
+      }
+    ]
+  }
 ]
